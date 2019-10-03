@@ -9,7 +9,17 @@ class ComicsController < ApplicationController
 
   def create
     Comic.create(comic_params)
+    redirect_to root_path
   end
+
+  def show
+    @comic = Comic.find(params[:id])
+    @panel = Panel.new
+  end
+
+
+
+
 
   private
 
