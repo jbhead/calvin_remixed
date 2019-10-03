@@ -1,1 +1,6 @@
 <h2 class="col-10 offset-1">C + H: REMIXED</h2>
+<% @comics.each do |panel| %>
+  <div>
+    <p> <%= panel.panel_description %></p>
+  </div>
+<% end %>
