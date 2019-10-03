@@ -1,0 +1,9 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Upload your panel</h1>
+  <%= simple_form_for @comic do |f| %>
+    <%= f.input :panel_description %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>
+
